@@ -1,0 +1,7 @@
+services:
+     - type: web
+       name: simulacao-consorcio
+       env: python
+       plan: free
+       buildCommand: ""
+       startCommand: "streamlit run cons.py --server.port $PORT"
